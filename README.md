@@ -6,7 +6,7 @@ Este site foi pensado para ser **moderno, responsivo e interativo**, servindo co
 ---
 
 ## 🌐 Visualize o projeto  
-👉 [Ver Portfólio Online](https://damasiodev.github.io/portfolio-matheusdamasio/)  
+👉<a href="https://damasiodev.github.io/potfolio/" target="_blank">Ver Portfólio Online</a>
 
 ---
 
@@ -29,10 +29,11 @@ Além disso, funciona como um **hub central** para outros projetos, cada um com 
 
 ## 📞 Contato  
 
-- 💻 [GitHub](https://github.com/damasiodev)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/matheus-damasio-dev/)  
-- ✉️ [Email](mailto:damasio.dev@gmail.com)  
-- 📱 [WhatsApp](https://wa.me/5561996069693?text=Ol%C3%A1%20Matheus,%20vim%20pelo%20seu%20portf%C3%B3lio%20👋)  
+- 💻 <a href="https://github.com/damasiodev" target="_blank">GitHub</a>  
+- 🔗 <a href="https://www.linkedin.com/in/matheus-damasio-dev/" target="_blank">LinkedIn</a>  
+- ✉️ <a href="mailto:damasio.dev@gmail.com" target="_blank">Email</a>  
+- 📱 <a href="https://wa.me/5561996069693?text=Ol%C3%A1%20Matheus,%20vim%20pelo%20seu%20portf%C3%B3lio%20👋" target="_blank">WhatsApp</a>  
+
 
 ---
 
