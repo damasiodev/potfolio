@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
+    <title>Matheus Damásio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-blue': '#00f3ff',
+                        'cyber-purple': '#7700ff',
+                        'cyber-dark': '#0a0a1a',
+                        'cyber-gray': '#1a1a2e'
+                    },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 15px #00f3ff' },
+                            '50%': { boxShadow: '0 0 20px #00f3ff, 0 0 30px #00f3ff, 0 0 40px #00f3ff' }
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+    <!-- NAV -->
+    <nav
+        class="fixed w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-cyber-dark bg-opacity-80 backdrop-filter backdrop-blur-lg">
+        <div class="text-3xl font-bold cyber-gradient-text z-50">MATHEUSDAMÁSIO.</div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-white font-semibold">HOME</a>
+            <a href="#about" class="nav-link text-white font-semibold">ABOUT</a>
+            <a href="#projects" class="nav-link text-white font-semibold">PROJECTS</a>
+            <a href="#skills" class="nav-link text-white font-semibold">SKILLS</a>
+            <a href="#contact" class="nav-link text-white font-semibold">CONTACT</a>
+        </div>
+
+        <div class="md:hidden flex items-center relative z-50">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <div id="mobile-menu"
+                class="mobile-menu hidden md:hidden bg-cyber-dark bg-opacity-90 max-h-0 absolute top-full right-0 rounded-b-lg">
+                <div class="container mx-auto px-4 py-2 flex flex-col space-y-3 text-right">
+                    <a href="#home" class="py-2 text-white hover:text-cyan-400 transition-colors duration-300">Home</a>
+                    <a href="#about"
+                        class="py-2 text-white hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="#projects"
+                        class="py-2 text-white hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                    <a href="#skills"
+                        class="py-2 text-white hover:text-cyan-400 transition-colors duration-300">Skills</a>
+                    <a href="#contact"
+                        class="py-2 text-white hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- VIDEO -->
+    <div id="home" class="video-container">
+        <video autoplay muted loop>
+            <source src="img/video-bg.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="relative z-10 flex items-center justify-center h-full hero-content">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 cyber-glow">CRIANDO O <span
+                        class="cyber-gradient-text">FUTURO DIGITAL</span></h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Moldando o futuro, uma linha de código de cada
+                    vez.</p>
+                <a href="#projects"
+                    class="cyber-border px-8 py-3 text-lg font-semibold rounded-md cyber-glow hover:bg-cyber-blue hover:bg-opacity-10 transition-all duration-300 animate-pulse-glow">
+                    EXPLORE MEU TRABALHO
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-custom-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-4xl font-bold text-center mb-12">SOBRE<span class="cyber-gradient-text">.</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-custom-gray-800 p-6 rounded-lg shadow-lg text-justify indent-8">
+                        <p class="text-2xl mb-4">
+                            Olá, sou Matheus Damásio, em transição de carreira para Desenvolvimento Web. Trago comigo a
+                            criatividade do design gráfico e a experiência em atendimento e vendas, fortalecendo minha
+                            comunicação, visão de negócio e foco em soluções eficazes.
+                        </p>
+
+                        <p class="text-2xl mb-4">
+                            Atualmente me dedico ao aprendizado de tecnologias modernas e à criação de projetos que
+                            seguem boas práticas de desenvolvimento, lógica de programação e design responsivo.
+                        </p>
+
+                        <p class="text-2xl mb-4">
+                            Busco oportunidades como Desenvolvedor Front-End Júnior, remoto ou presencial, para
+                            contribuir em projetos reais, colaborar com equipes engajadas e evoluir constantemente como
+                            profissional. Estou aberto a conexões e parcerias na área.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- iMAGEM -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80 rounded-full overflow-hidden border-4 border-custom-orange">
+                        <div class="w-full h-full bg-custom-gray-700 flex items-center justify-center">
+                            <img src="img/img-1.png" alt="user" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </nav>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 px-6 md:px-12 lg:px-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-4xl font-bold text-center mb-12">PROJETOS RECENTES<span
+                    class="cyber-gradient-text">.</span></h2>
+            <p class="text-3xl text-cyber-blue max-w-2xl mx-auto">Explore meus trabalhos mais recentes que apresentam
+                soluções
+                inovadoras e design de ponta.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- PROJECT 1 -->
+            <a href="https://damasiodev.github.io/cafena-page/" target="_blank" rel="noopener noreferrer"
+                class="block rounded-lg p-6 cyber-border hover:scale-105 transition-transform duration-300">
+                <div class="h-48 bg-cyber-gray rounded-md mb-4 flex items-center justify-center">
+                    <img src="/img/cafena.jpg" class="w-full h-full object-cover object-top">
+                </div>
+                <h3 class="text-xl font-bold mb-2">CAFENA PAGE</h3>
+                <p class="text-gray-400 mb-4">
+                    Projetada para simular a experiência de um café acolhedor e moderno. A página apresenta um menu
+                    interativo com opções de café, avaliações de clientes e informações de contato, proporcionando uma
+                    experiência imersiva e funcional.
+                </p>
+                <div class="flex space-x-2">
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">HMTL</span>
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">CSS</span>
+                </div>
+            </a>
+
+            <!-- PROJECT 2 -->
+            <a href="https://damasiodev.github.io/Auto-Cars-Project/" target="_blank" rel="noopener noreferrer"
+                class="block rounded-lg p-6 cyber-border hover:scale-105 transition-transform duration-300"
+                style="animation-delay: 0.5s;">
+                <div class="h-48 bg-cyber-gray rounded-md mb-4 flex items-center justify-center">
+                    <img src="/img/auto-cars.jpg" class="w-full h-full object-cover object-top">
+                </div>
+                <h3 class="text-xl font-bold mb-2">AUTO CARS</h3>
+                <p class="text-gray-400 mb-4">
+                    Página voltada para aluguel e venda de carros. Apresenta home,
+                    aluguel, venda, contato e login (ainda em desenvolvimento) oferecendo uma experiência prática e
+                    interativa para o usuário.
+                </p>
+                <div class="flex space-x-2">
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">HMTL</span>
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">CSS</span>
+                </div>
+            </a>
+
+            <!-- PROJECT 3 -->
+            <a href="https://damasiodev.github.io/first-banner-project-html-css-js-/" target="_blank"
+                rel="noopener noreferrer"
+                class="block rounded-lg p-6 cyber-border hover:scale-105 transition-transform duration-300"
+                style="animation-delay: 1s;">
+                <div class="h-48 bg-cyber-gray rounded-md mb-4 flex items-center justify-center">
+                    <img src="/img/wise-store.jpg" class="w-full h-full object-cover object-top">
+                </div>
+                <h3 class="text-xl font-bold mb-2">WISE STORE</h3>
+                <p class="text-gray-400 mb-4">
+                    Página Web desenvolvida para treinar banner interativo, contudo ainda serão adicionadas outras seções futuramente.
+                </p>
+                <div class="flex space-x-2">
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">HMTL</span>
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">CSS</span>>
+                    <span class="text-xs px-3 py-1 cyber-border rounded-full">JavaScript</span>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 px-6 md:px-12 lg:px-24 bg-cyber-gray">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-4xl font-bold text-center mb-12">TÉCNICAS & SKILLS<span
+                    class="cyber-gradient-text">.</span></h2>
+
+            <p class="text-3xl text-cyber-blue max-w-2xl mx-auto">Dominando e sempre aprendendo as ferramentas e
+                tecnologias que
+                impulsionam o futuro da web.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <!-- FRONTEND -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 cyber-gradient-text">FRONTEND DEVELOPMENT</h3>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fab fa-html5 text-white text-lg"></i>
+                            <span>HTML</span>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fab fa-css3 text-white text-lg"></i>
+                            <span>CSS</span>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fab fa-js-square text-white text-lg"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 cyber-gradient-text">BACKEND DEVELOPMENT</h3>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-bolt text-white text-lg"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-layer-group text-white text-lg"></i>
+                            <span>Supabase</span>
+                        </div>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-database text-white text-lg"></i>
+                            <span>SQL/NoSQL</span>
+                        </div>
+                        <span>55%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div class="text-center p-6 cyber-border rounded-lg">
+                <i class="fas fa-code text-4xl cyber-gradient-text mb-4"></i>
+                <h4 class="font-bold">Código limpo</h4>
+            </div>
+
+            <div class="text-center p-6 cyber-border rounded-lg">
+                <i class="fas fa-mobile-alt text-4xl cyber-gradient-text mb-4"></i>
+                <h4 class="font-bold">Design Responsivo</h4>
+            </div>
+
+            <div class="text-center p-6 cyber-border rounded-lg">
+                <i class="fas fa-bolt text-4xl cyber-gradient-text mb-4"></i>
+                <h4 class="font-bold">Performance Rápida</h4>
+            </div>
+
+            <div class="text-center p-6 cyber-border rounded-lg">
+                <i class="fas fa-shield-alt text-4xl cyber-gradient-text mb-4"></i>
+                <h4 class="font-bold">Soluções Seguras</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="py-20 px-6 md:px-12 lg:px-24">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">CONTATO<span
+                    class="cyber-gradient-text">.</span></h2>
+            <p class="text-3xl text-cyber-blue max-w-2xl mx-auto">
+                Pronto para dar vida ao seu projeto futurista? Vamos nos conectar e criar algo incrível juntos?
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-6 cyber-gradient-text">INFORMAÇÕES</h3>
+
+                <div class="flex items-start mb-6">
+                    <div class="mr-4 text-cyber-blue text-xl">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Local</h4>
+                        <p class="text-gray-400">BRASIL, Brasília</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start mb-6">
+                    <div class="mr-4 text-cyber-blue text-xl">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Email</h4>
+                        <p class="text-gray-400">damasio.dev@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start mb-6">
+                    <div class="mr-4 text-cyber-blue text-xl">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Telefone</h4>
+                        <p class="text-gray-400">+55 (61) 9 9606-9693</p>
+                    </div>
+                </div>
+
+                <div class="flex space-x-6 mt-10">
+                    <a href="https://github.com/damasiodev" target="_blank"
+                        class="h-12 w-12 cyber-border rounded-full flex items-center justify-center text-xl hover:bg-cyber-blue hover:bg-opacity-10 transition-all">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/matheus-damasio-dev/" target="_blank"
+                        class="h-12 w-12 cyber-border rounded-full flex items-center justify-center text-xl hover:bg-cyber-blue hover:bg-opacity-10 transition-all">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/msdamasio?igsh=cW8yc3JxbGY4M2d2&utm_source=qr" target="_blank"
+                        class="h-12 w-12 cyber-border rounded-full flex items-center justify-center text-xl hover:bg-cyber-blue hover:bg-opacity-10 transition-all">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-6 cyber-gradient-text">ENVIE UMA MENSAGEM</h3>
+
+                <form id="whatsapp-form" class="space-y-4">
+                    <input type="text" id="nome" placeholder="Seu Nome"
+                        class="w-full px-4 py-3 bg-cyber-gray rounded-md cyber-border focus:outline-none focus:ring-2 focus:ring-cyber-blue"
+                        required>
+
+                    <input type="email" id="email" placeholder="Seu E-mail"
+                        class="w-full px-4 py-3 bg-cyber-gray rounded-md cyber-border focus:outline-none focus:ring-2 focus:ring-cyber-blue"
+                        required>
+
+                    <input type="text" id="assunto" placeholder="Assunto"
+                        class="w-full px-4 py-3 bg-cyber-gray rounded-md cyber-border focus:outline-none focus:ring-2 focus:ring-cyber-blue">
+
+                    <textarea id="mensagem" placeholder="Sua Mensagem" rows="5"
+                        class="w-full px-4 py-3 bg-cyber-gray rounded-md cyber-border focus:outline-none focus:ring-2 focus:ring-cyber-blue"></textarea>
+
+                    <button type="submit"
+                        class="w-full cyber-border px-6 py-3 text-lg font-semibold rounded-md cyber-glow hover:bg-cyber-blue hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                        ENVIAR MENSAGEM <i class="fab fa-whatsapp ml-2"></i>
+                    </button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 md:px-12 text-center border-t border-cyber-blue border-opacity-30">
+        <p class="text-gray-400">© 2025 MATHEUS DAMÁSIO Web Developer. All rights reserved.</p>
+        <p class="text-cyber-blue mt-2">Designed with <i class="fas fa-heart text-red-500"></i> for the future.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
